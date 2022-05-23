@@ -1,0 +1,28 @@
+.sidenav {
+    background-color: #3F51B5;
+    width: 200px;
+    width: 180px;;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 2 !important;
+}
+
+.sidenav .logo {
+    max-height: 179px !important;
+}
+
+
+.sidenav a {
+    color: #FFF;
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 16px;
+    background-color: #FFF;
+}

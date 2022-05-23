@@ -1,0 +1,9 @@
+<div class="form-container">
+    <h1>Login</h1>
+    <form #formData="ngForm" (ngSubmit)='onSubmit(formData)'>
+      <input type="text" placeholder="E-mail" (ngModel)="email" name="email" class="input-txt" required>
+      <input type="password" placeholder="Senha" (ngModel)="password" name="password" class="input-txt" required>
+      <button mat-button type="submit" [disabled]="!formData.valid" class="auth-btn">Entrar</button>
+    </form>
+    <a routerLink="/signup" routerLinkActive="active" class="create-account-txt">Não cadastrado? <strong>Clique aqui</strong></a>
+  </div>

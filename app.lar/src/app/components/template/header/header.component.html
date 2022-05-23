@@ -1,0 +1,17 @@
+<mat-toolbar class="header mat-elevation-z4 spacing">
+    <span class="title-group">
+        <a routerLink="{{ routeUrl }}">
+            <i class="material-icons">
+                {{ icon }}
+            </i>
+            {{ title }}
+        </a>
+    </span>
+    <div layout="column" layout-align="left" flex style="float: left !important;">
+        <button mat-button (click)="logout()">
+            <mat-icon aria-hidden="false">login</mat-icon>    
+            Logout
+          </button>
+        <span flex></span>
+    </div>
+</mat-toolbar>

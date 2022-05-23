@@ -1,0 +1,15 @@
+<div class="form-container">
+  <div class="voltar">
+    <a  routerLink="/login" id="goback">Voltar</a>
+  </div>
+  <div>
+    <div>
+    <h1>Entrar</h1>
+  </div>
+    <form #formData="ngForm" (ngSubmit)="onSubmit(formData)">
+      <input type="text" placeholder="E-mail" (ngModel)="email" name="email" class="input-txt" required>
+      <input type="password" placeholder="Senha" (ngModel)="password" name="password" class="input-txt" required>
+      <button type="submit" mat-button [disabled]="!formData.valid" class="auth-btn">Criar Conta</button>
+    </form>
+  </div>
+  </div>

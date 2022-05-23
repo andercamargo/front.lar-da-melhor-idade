@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    padding: 0 0px;
+    align-items: center;
+    height: 92px;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.header .title-group {
+    padding-left: 25px;
+}
+
+.header .title-group i {
+    padding-right: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spacing{
+    margin-left: 180px !important;
+}

@@ -1,0 +1,61 @@
+<mat-card>
+    <mat-card-title>Novo Atendimento</mat-card-title>
+    <form #formData="ngForm">
+        <mat-form-field>
+            <input matInput placeholder="Paciente"
+                [(ngModel)]="attendance.patient" name="patient" autofocus >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput  type="text" placeholder="Idade do Paciente"
+                [(ngModel)]="attendance.age" name="age" maxlength="3"  numbersOnly required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="text" placeholder="Cartão do Convênio"
+                [(ngModel)]="attendance.planCardNumber" name="planCardNumber" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput   type="number" placeholder="Código do Plano de Saúde"
+                [(ngModel)]="attendance.healthPlanCode" name="healthPlanCode" numbersOnly required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome do Plano de Saúde"
+                [(ngModel)]="attendance.healthPlanName" name="healthPlanName" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Médico"
+                [(ngModel)]="attendance.doctor" name="doctor" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Idade do Médico"
+                [(ngModel)]="attendance.doctorAge" name="doctorAge" numbersOnly maxlength="3" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CRM do Médico"
+                [(ngModel)]="attendance.crm" name="crm" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Anamnese</mat-label>
+            <textarea matInput [(ngModel)]="attendance.anamnesis"  name="anamnesis" required></textarea>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Conduta Médica</mat-label>
+            <textarea matInput [(ngModel)]="attendance.therapeuticApproach"  name="therapeuticApproach" required></textarea>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Prescrição</mat-label>
+            <textarea matInput [(ngModel)]="attendance.prescription"  name="prescription" required></textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Status" readonly
+                [(ngModel)]="attendance.status" name="status">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="create()"  [disabled]="!formData.valid" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

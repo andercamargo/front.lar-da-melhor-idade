@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lardamelhoridade21": {
+      "hosting": {
+        "app-lar": [
+          "lardamelhoridade21"
+        ]
+      }
+    }
+  }
+}
