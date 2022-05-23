@@ -1,4 +1,6 @@
-#Para rodar a aplicação:
+#Running app:
 
-#executar
+#Execute
 npm start
+
+#App development with Angular 2 + Firebase
